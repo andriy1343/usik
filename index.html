@@ -6,97 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root {
+            --primary-color: rgb(225, 0, 0);
+            --secondary-color: rgb(165, 42, 42);
+            --tertiary-color: rgb(225, 228, 196);
+            --quaternary-color: rgb(225, 215, 0);
+            --fifth-color: #f0f0f0;
+            --sixth-color: rgb(42, 5, 205);
+            --seventh-color: rgb(0, 128, 0);
+            --eighth-color: rgb(128, 128, 128);
+            --ninth-color: rgb(0, 0, 225);
+            --tenth-color: rgb(127, 225, 0);
+            --eleventh-color: rgb(225, 225, 0);
+            --twelfth-color: rgb(0, 0, 0);
+        }
+
+
+
+
+
+
+
+
         .menu-item {
             list-style: none;
+            text-indent: 200px;
+            white-space: inherit;
         }
 
         .menu-element {
             text-decoration: none;
-            color: red;
+            color: var(--primary-color);
+            letter-spacing: 10px;
+            text-decoration: line-through;
         }
 
-        .nav-menu {
+        .nav-menu::selection {
             display: flex;
             justify-content: center;
             gap: 20px;
-            background-color: bisque;
+            background-color: var(--tertiary-color);
             padding: 20px;
+            text-shadow: 10px 10px 10px red;
+            border-radius: 10%;
+
         }
 
-        .bio {
-            Color: red;
-            background-color: bisque;
+        .bio::first-letter {
+            Color: var(--primary-color);
+            background-color: var(--tertiary-color);
             padding: 10px;
+            text-shadow: 2px 2px 8px;
         }
 
         .photo {
             border-radius: 67px;
+            text-transform: capitalize;
+            text-decoration: dashed;
+            letter-spacing: 100px;
+
         }
 
         .hero-light {
-            color: brown;
+            color: var(--secondary-color);
+            letter-spacing: 10px;
+            word-wrap: none;
         }
 
         .award {
             font-style: italic;
             font-weight: bold;
             font-size: 20px;
-            color: gold;
+            color: var(--quaternary-color);
+            letter-spacing: 20px;
+            word-wrap: normal;
         }
 
         .hero-list {
-            background-color: #f0f0f0;
+            background-color: var(--fifth-color);
             padding-left: 20px;
             padding-bottom: 10px;
         }
 
         .hero-element {
-            color: rgb(42, 5, 205);
+            color: var(--sixth-color);
             padding: 0px 10px 0px 10px;
+            text-decoration: line-through;
+            letter-spacing: 6, 7px;
         }
 
         .title {
-            color: green;
+            color: var(--seventh-color);
+            text-shadow: 2px 4px 2px;
         }
 
-        .i {
+        .i::selection {
             font-size: 14px;
-            color: gray;
+            color: var(--eighth-color);
+            text-transform: red;
+            color: red;
         }
 
         .wba {
-            color: gold;
-            background-color: gray;
+            color: var(--quaternary-color);
+            background-color: var(--eighth-color);
             border-radius: 67px;
             max-width: 300px;
+            text-decoration: none;
+            letter-spacing: 25px;
+
         }
 
         .wbo {
-            color: blue;
-
+            color: var(--ninth-color);
+            text-shadow: 4px 2px 3px red;
+        text-decoration: dotted;
         }
 
         .usic {
-            color: brown;
+            color: var(--secondary-color);
             font-style: italic;
+            white-space: inherit;
         }
 
         .a {
-            background-color: grey;
-            color: chartreuse;
+            background-color: var(--eighth-color);
+            color: var(--tenth-color);
             font-style: italic;
+            text-shadow: 2px 5px 6px yellow;
         }
 
         .egipt {
-            color: yellow;
-            background-color: black;
+            color: var(--eleventh-color);
+            background-color: var(--twelfth-color);
             max-width: 300px;
             display: flex;
             border-radius: 67px;
+            word-spacing: 20px;
         }
 
         .last {
-            color: red;
+            color: var(--primary-color);
+            letter-spacing: 10x;
         }
     </style>
 </head>
